@@ -1,0 +1,159 @@
+.CityDetails{
+
+  &__main {
+    border-right: 1px solid rgba(40, 132, 238, 0.774);;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 50px;
+    margin-right: 20px;
+    min-width: 280px;
+
+    &__back {
+      height: 50px;
+      width: 200px;
+      background-color: rgba(40, 132, 238, 0.774);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      transition: all 0.3s;
+
+      &:hover{
+        box-shadow: 0px 0px 10px 1px rgb(112, 112, 112);
+        text-decoration: none;
+        color: white;
+      }
+    }
+  
+    &__cityName {
+      font-size: 68px;
+    }
+  
+    &__temp {
+      font-size: 68px;
+    }
+  
+    &__icon {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      right: 50px;
+      top: 150px;
+    }
+  
+    &__description {
+      &:first-letter {
+        text-transform:capitalize;
+      }
+
+      text-align: center;
+      font-size: 40px;
+      margin-top: 100px;
+    }
+  
+    &__info {
+      list-style: none;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      &-item {
+        margin: 5px;
+      }
+    }
+  
+    &__date {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .CityDetails {
+    &__main {
+      &__cityName {
+        font-size: 48px;
+      }
+      &__temp {
+        font-size: 48px;
+      }
+      &__info {
+        font-size: 13px;
+      }
+      &__date {
+        font-size: 13px;
+      }
+      &__description {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .CityDetails__main {
+    margin: 0;
+    border-right: none;
+    padding-right: 0px;
+
+    &__icon{
+      right: 50px;
+      top: 25px;
+    }
+    &__cityName {
+      font-size: 68px;
+    }
+    &__temp {
+      font-size: 68px;
+    }
+    &__info {
+      font-size: 18px;
+    }
+    &__date {
+      font-size: 18px;
+    }
+    &__description {
+      margin-top: -30px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .CityDetails__main {
+    margin: 0;
+    border-right: none;
+    padding-right: 0px;
+
+    &__icon{
+      transform: scale(0.7);
+      right: -20px;
+      top: 25px;
+    }
+    &__cityName {
+      font-size: 40px;
+    }
+    &__temp {
+      font-size: 40px;
+    }
+    &__info {
+      font-size: 14px;
+    }
+    &__date {
+      font-size: 14px;
+    }
+    &__description {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  }
+}

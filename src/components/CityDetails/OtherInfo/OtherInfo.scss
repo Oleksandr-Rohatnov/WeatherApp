@@ -1,0 +1,227 @@
+.CityDetails {
+  &__other {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+  
+    &__hourly {
+      display: flex;
+      flex-direction: column;
+      background-color:rgb(169, 227, 253);
+      border-radius: 20px;
+      padding: 10px;
+      margin-bottom: 5px;
+      min-width: 720px;
+      
+
+      &__table {
+        display: flex;
+        height: 150px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: rgba(252, 252, 252, 0.568);
+          position: absolute;
+          
+        }
+      }
+      &__table-item {
+         width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 5px;
+        list-style: none;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+
+        border-radius: 5px;
+      }
+    }
+    
+    &__time {
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        margin-right: 5px;
+        border-right: 1px solid gray;
+        margin-bottom: -5px;
+      }
+
+      &__icons {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+      
+        &-item {
+          display: flex;
+          max-width: 55px;
+          min-width: 20px;
+          justify-content: center;
+          margin-right: 5px;
+          margin-bottom: -5px;
+        }
+      }
+    }
+
+
+    &__daily {
+      display: flex;
+      flex-direction: column;
+      background-color:rgb(169, 227, 253);
+      border-radius: 20px;
+      padding: 10px;
+      min-width: 720px;
+
+      &__table {
+        display: flex;
+        height: 150px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: rgba(252, 252, 252, 0.568);
+          position: absolute;
+        }
+      }
+      
+      &__table-item {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        width: 90px;
+
+        :first-child {
+          font-size: 14px;
+          min-width: 40px;
+          margin-right: 5px;
+          background-color: rgb(14, 2, 126);
+          color: white;
+          border-radius: 7px;
+        }
+
+        :last-child {
+          min-width: 40px;
+          max-width: 50px;
+          font-size: 14px;
+          background-color: rgb(255, 255, 255);
+          color: rgb(88, 100, 124);
+          border-radius: 7px;
+        }
+      }
+    }
+
+    &__day {
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        width: 85px;
+        display: flex;
+        justify-content: center;
+        margin-right: 5px;
+        text-align: center;
+        margin-bottom: -5px;
+        border-right: 1px solid grey;
+      }
+
+      &__icons {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        &-item {
+          display: flex;
+          max-width: 60px;
+          min-width: 30px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .CityDetails__other__hourly {
+    transform-origin: center;
+    transform: scale(0.9);
+  }
+  .CityDetails__other__daily {
+    transform-origin: center;
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1130px) {
+  .CityDetails__other__hourly {
+    transform-origin: center;
+    transform: scale(0.8);
+    margin-left: -90px;
+  }
+  .CityDetails__other__daily {
+    transform-origin: center;
+    transform: scale(0.8);
+    margin-left: -90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .CityDetails__other__hourly {
+    margin: 10px;
+  }
+  .CityDetails__other__daily {
+   margin: 10px;
+   
+  }
+}
+
+@media (max-width: 840px) {
+  .CityDetails__other {
+    transform: scale(0.8);
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 675px) {
+  .CityDetails__other {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 520px) {
+  .CityDetails__other {
+    transform: scale(0.5);
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .CityDetails__other {
+    transform: scale(0.4);
+    margin-top: -200px;
+  }
+}
+
+
+
