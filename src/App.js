@@ -15,9 +15,9 @@ state = {
 }
 
 componentDidMount() {
-  const x = Object.keys(localStorage);
+  const localStorageKeys = Object.keys(localStorage);
 
-  x.forEach(city => this.addNewCityToState(city));
+  localStorageKeys.forEach(city => this.addNewCityToState(city));
 }
 
  addNewCityToState = async(city) => {
