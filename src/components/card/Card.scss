@@ -1,0 +1,113 @@
+.card {
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  background-color: rgb(150, 215, 252);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(119, 188, 253);
+  border: 1px solid rgb(145, 145, 145);
+  position: relative;
+  box-shadow: 5px 5px 10px 5px rgba(1, 103, 143, 0.384);
+  transition: all 1s;
+
+  &:hover{
+    transform: scale(1.1)
+  }
+
+  &__temp {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-size: 60px;
+  }
+
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    right: 35px;
+  }
+
+  &__description {
+    &:first-letter {
+      text-transform:capitalize;
+    }
+
+    margin-top: 20px;
+    position: relative;
+    top: 100px;
+
+  }
+
+  &__info {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+
+    &__item {
+      margin: 5px;
+    }
+  }
+
+  &__button-Delete {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    padding: 5px 12px;
+    background-color: rgba(40, 132, 238, 0.774);
+    border: none;
+    border-radius: 30%;
+    font-size: 18px;
+    color: rgb(250, 250, 250);
+    transition: all 0.3s;
+
+    &:hover{
+      box-shadow: 0px 0px 10px 1px rgb(112, 112, 112);
+    }
+  }
+
+  &__button-Refresh {
+    position: absolute;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: rgba(40, 132, 238, 0.774);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: rgb(250, 250, 250);
+    transition: all 0.3s;
+
+    &:hover{
+      box-shadow: 0px 0px 10px 1px rgb(112, 112, 112);
+    }
+  }
+
+  &__button-more {
+    background-color: rgba(40, 132, 238, 0.774);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s;
+
+    &:hover{
+      box-shadow: 0px 0px 10px 1px rgb(112, 112, 112);
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

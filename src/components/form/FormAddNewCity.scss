@@ -1,0 +1,65 @@
+.FormAddNewCity {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  position: relative;
+  
+
+  &__input {
+    height: 50px;
+    width: 100%;
+    min-width: 50px;
+    margin-right: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(57, 67, 116);
+    border: none;
+    padding-left: 20px;
+    transition: all 0.5s;
+
+    &::placeholder {
+      color: rgb(152, 184, 197);
+    }
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  &__button {
+    min-width: 120px;
+    height: 50px;
+    background-color: rgba(40, 132, 238, 0.774);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(57, 67, 116);
+    transition: all 0.5s;
+
+    &:hover{
+      transform: scale(1.1);
+
+    }
+  }
+
+  &__error {
+    position: absolute;
+    left: 20px;
+    top: -30px;
+    color: red;
+  }
+}
+
+@media (max-width: 1000px) {
+  .FormAddNewCity {
+    flex-direction: column;
+
+    &__input {
+      margin-bottom: 20px;
+    }
+  }
+}
